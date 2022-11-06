@@ -1,3 +1,4 @@
+/* Display Mapping - show the note of the key played using the id */
 const displayMapping = {
     'c-1' : 'C',
     'cs-1': 'C#',
@@ -38,7 +39,10 @@ const playSound = (note, url) => {
 
 /* Wire Event Listener to each key - use Id to play correct key */
 pianoKeys.forEach((pianoKey) => {
+    //Get the note played using the element id
     const pianoKeyId = pianoKey.id;
+    //Generate the filename for the sample so we can play it
     const location = `keys/${pianoKeyId}.mp3`;
+    //Bind the event to the specified key
     pianoKey.addEventListener('click', () => playSound(pianoKeyId, location));
 });
