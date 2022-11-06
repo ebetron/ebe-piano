@@ -8,7 +8,7 @@ Experimenting with the JavaScript Audio API to build a sampled piano instrument 
 
 - 24-key piano
 - Displays the key being played
-- Play it live [here](http://ebetron.github.io/ebe-piano)
+- Play it live [here](https://ebetron.github.io/ebe-piano)
 
 ## Samples
 
