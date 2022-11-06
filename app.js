@@ -5,8 +5,8 @@ const playSound = (url) => {
     console.log(url);
 };
 
-pianoKeys.forEach((pianoKey, i) => {
-    const keynumber = i < 9 ? `0${i + 1}` : (i + 1);
-    const location = `keys/key${keynumber}.mp3`;
+pianoKeys.forEach((pianoKey) => {
+    const pianoKeyId = pianoKey.id;
+    const location = `keys/${pianoKeyId}.mp3`;
     pianoKey.addEventListener('click', () => playSound(location));
 });
