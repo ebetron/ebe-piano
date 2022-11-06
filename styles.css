@@ -49,7 +49,7 @@ body {
     background-color: #000;
 }
 
-/* The hard part - aligning the black keys so it looks like a piano */
+/* The hard part - aligning the black keys on top of the white keys so it looks like a piano */
 .black-key:nth-child(1) {
     left: 48px;
 }
